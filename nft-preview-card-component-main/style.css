@@ -7,7 +7,7 @@ body{
     padding: 0px;
     display: flex;
     flex-direction: column;
-    background-color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
 }
 
 h1, p{
@@ -21,42 +21,63 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+.container_img{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 .img-equilibrium{
-    width: 17rem;
-    height: 16em;
-    padding-top: 2rem;
-    border-radius: 8px;
+    width: 85%;
+    padding-top: 1.7rem;
+    border-radius: 10px;
 }
 h1{
     color: hsl(0, 0%, 100%);
     font-size: 18px;
-    padding-right: 7.8rem ;
     padding-top: 0.6rem;
     font-weight: 600;
+    padding-left: 1.4rem;
 }
 .first-p{
     margin-top: 0.5rem;
-    padding-left: 1.2rem;
+    padding-left: 1.4rem;
 }
 span{
     display: flex;
-    width: 85%;
+    width: 100%;
 }
 .moeda{
     display: flex;
+    align-items: center;
     width:  50%;
     font-size: 1rem;
+    padding-left: 1.5rem;
+}
+.moeda img{
+    width: 0.7rem;
+    height: 1.2rem;
+    padding-right: 0.6rem;
 }
 .time{
     width: 50%;
     display: flex;
+    align-items: center;
     font-size: 1rem;
     height: 1rem;
 }
+#time_img{
+    padding-right: 0.6rem;
+}
+hr{
+    width: 90%;
+}
+.att_creator{
+    display: flex;
+}
+.att_creator img{
+    width: 2.6rem;
+    height: 2.3rem;
+    padding-left: 1.3rem;
+}
 
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
