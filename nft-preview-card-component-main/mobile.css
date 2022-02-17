@@ -3,10 +3,9 @@
 
 
 body{
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: hsl(217, 54%, 11%);
 }
 
@@ -14,15 +13,20 @@ h1, p{
     font-family: 'Outfit', sans-serif;
 }
 
-main{    
-    margin: 4rem 2rem 2rem;
+main{
+
     border-radius: 10px;
     background-color:hsl(216, 50%, 16%);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 400px;
+    max-height: 650px;
     height: 80vh;
+    width: 80vw;
+    margin-top: 7%;
 }
+
 .container_img{
     display: flex;
     justify-content: center;
@@ -37,11 +41,11 @@ h1{
     font-size: 18px;
     padding-top: 0.6rem;
     font-weight: 600;
-    padding-left: 1.4rem;
+    padding-left: 7%;
 }
 .first-p{
     margin-top: 0.5rem;
-    padding-left: 1.4rem;
+    padding-left: 7%;
     font-weight: 300;
     font-size: 1rem;
     margin-bottom: 0.2rem;
@@ -56,7 +60,7 @@ span{
     align-items: center;
     width:  50%;
     font-size: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 7%;
 }
 .moeda img{
     width: 0.7rem;
@@ -73,7 +77,7 @@ span{
     font-size: 1rem;
     padding-left: 1.5rem;
 }
-#time_img{
+.time_img{
     padding-right: 0.6rem;
 }
 .time p{
@@ -87,14 +91,14 @@ hr{
     display: flex;
     align-items: center;
     padding-top: 0.6rem;
-    padding-left: 1.2rem;
+    padding-left: 7%;
 }
 .att_creator img{
     border-radius: 50%;
     border: solid 2px rgb(255, 255, 255);
 }
-#avatar{
-    height: 2.2rem;
+.avatar{
+    height: 1.8rem;
 }
 .att_creator p {
     color: hsl(215, 51%, 70%);
@@ -105,4 +109,13 @@ hr{
     color:hsl(0, 0%, 100%);
     text-decoration: none;
     
+}
+
+main .container_img:hover{
+    cursor: pointer;
+    background: hsl(178, 100%, 50%);;
+}
+main h1:hover, .att_creator p a:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
