@@ -22,10 +22,9 @@ main{
     justify-content: center;
     max-width: 300px;
     max-height: 530px;
-    
     height: 80vh;
     width: 80vw;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .container_img{
@@ -153,9 +152,9 @@ main h1:hover, .att_creator p a:hover{
     
 }
 
-@media (max-width: 400px) {
+@media (min-width: 800px) {
     main{
-        margin-top: 12%;
+        margin-top: 10%;
     }
     
 }
