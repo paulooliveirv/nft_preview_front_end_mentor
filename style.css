@@ -30,12 +30,14 @@ main{
 
 .container_img{
     display: flex;
+    position :relative;
     justify-content: center;
     border-radius: 10px;
 }
 .img-equilibrium{
     width: 85%;
     border-radius: 10px;
+    display: block;
 }
 h1{
     color: hsl(0, 0%, 100%);
@@ -112,10 +114,38 @@ hr{
     
 }
 
-main .container_img .img-equilibrium:hover{
+main .container_img img:hover{
     cursor: pointer;
-    background: hsl(178, 100%, 50%);
-    background-color:rgba(0,255,247,0.356);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 85%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(197, 100%, 50%, 0.589);
+    border-radius: 10px;
+    margin-left: 23px;
+}
+.eye_hover {
+    color: rgba(255, 255, 255, 0.404);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.container img:hover{
+    cursor: pointer;
+}
+.container_img:hover .overlay {
+    opacity: 1;
 }
 main h1:hover, .att_creator p a:hover{
     cursor: pointer;
