@@ -25,7 +25,7 @@ main{
     
     height: 80vh;
     width: 80vw;
-    margin-top: 7%;
+    margin-top: 10%;
 }
 
 .container_img{
@@ -120,5 +120,12 @@ main .container_img .img-equilibrium:hover{
 main h1:hover, .att_creator p a:hover{
     cursor: pointer;
     color: hsl(178, 100%, 50%);
+    
+}
+
+@media (max-width: 400px) {
+    main{
+        margin-top: 12%;
+    }
     
 }
